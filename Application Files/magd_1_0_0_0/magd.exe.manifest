@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="magd.exe" version="1.0.0.0" publicKeyToken="9126bc56562546be" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="magd" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="magd.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Protobuf.dll" size="294400">
+      <assemblyIdentity name="Google.Protobuf" version="3.5.1.0" publicKeyToken="A7D26565BAC4D604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kmmLSyM9YCkmP+X33YMDTg/6sJlFHUuInLwRv1o/LXM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="magd.exe" size="324056">
+      <assemblyIdentity name="magd" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BSK5cy8dXroFkbBvBgbXB8TcZavvjoOV1dnmSt5bi88=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="698368">
+      <assemblyIdentity name="MySql.Data" version="8.0.12.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>o1A1TiMHyyY2HLODhWlzi01juSSiEk3jKsgc9fnbhpo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="magd.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-LHSRL9P\magd" issuerKeyHash="c17c0ee04c0b3a6488c259256dcd05b1521121fd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vDkJt2mCdP1QDBIxz8Obmg7+Qb55ofu+7FSqasmK8LQ=</DigestValue></Reference></SignedInfo><SignatureValue>zx6fNg4nURZ2torlGDWEEA1cXC56zP3UNna6TxaulEMfNnw3t0DBQHxJAoiE8YPC+WhQ7gHVycgnss1FrmOs7wnN6a44Mj82D3qQqNTsHIbX7xf7ApFw53JvIVWPC51x6+WiMbBnm9nNYFe2ll/XxUJQvuM5lb+vl01yMGdGwSc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>09QSgx/rWaLj3hH2QxPrZT8BUSqZXwQ5Nlz7IJkBWPKEjrK8T0EO23zsWYM0AxxR2xsD7XAmq3aWAk+oT2Vitn7BA+KlOIKlsYAX2FKCphnufAizrEiZfTmtSJeve3AhL2efcgBGQqpwfuUYawvNj9y0DBBYa6zBEzzUcoCZRH0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b4f08ac96aaa54ecbefba179be41fe0e9a9bc3cf31120c50fd748269b70939bc" Description="" Url=""><as:assemblyIdentity name="magd.exe" version="1.0.0.0" publicKeyToken="9126bc56562546be" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-LHSRL9P\magd</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gwWeB4ToiMTg4slUZKEWzAS69TXo4ZN4pADjNZl02ww=</DigestValue></Reference></SignedInfo><SignatureValue>iunckKYdTgvjbepmFQ68f2uTYhdav3f2pIJcMJE+p6F7oLtlX5mFp6gePiZhQYAbSXuWsYcSxN+TWoFBeTQ+mZP+zdWw0PgU6+d43uzeAtiPHje/9VzHqBqtQZ4WjbUPaqvf4oyGhk9x9Xu2cCj2opNGlLjQDzr2/HIHc8ObKS4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>09QSgx/rWaLj3hH2QxPrZT8BUSqZXwQ5Nlz7IJkBWPKEjrK8T0EO23zsWYM0AxxR2xsD7XAmq3aWAk+oT2Vitn7BA+KlOIKlsYAX2FKCphnufAizrEiZfTmtSJeve3AhL2efcgBGQqpwfuUYawvNj9y0DBBYa6zBEzzUcoCZRH0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQMIhnuHvtp6RIpCuBGPYGpTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEwASABTAFIATAA5AFAAXABtAGEAZwBkMB4XDTE4MTIwODE1MTE1NFoXDTE5MTIwODIxMTE1NFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBMAEgAUwBSAEwAOQBQAFwAbQBhAGcAZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA09QSgx/rWaLj3hH2QxPrZT8BUSqZXwQ5Nlz7IJkBWPKEjrK8T0EO23zsWYM0AxxR2xsD7XAmq3aWAk+oT2Vitn7BA+KlOIKlsYAX2FKCphnufAizrEiZfTmtSJeve3AhL2efcgBGQqpwfuUYawvNj9y0DBBYa6zBEzzUcoCZRH0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBjmY2b8KksZiE5hIaUgHGSMlT9/kyYTVYKD0BOHukDd+aktTp4d9imxz4AlBZ6HpbLX7XdvsPWfZWokOYJf1B+hBGFYIs914PIEygKA6QimuDUgkAXuvSB5JICMseyNy+b7x5GtAgUu6fFnt1ESYPzUnNcGLPK8DZ7YAY20r/pXg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
